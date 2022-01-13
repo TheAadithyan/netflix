@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {API_KEY, IMAGE_URL} from '../Constants/Constants'
+import {API_KEY, imageUrl} from '../Constants/Constants'
 import axios from '../../axios'
 import math from 'math';
 
@@ -18,7 +18,7 @@ function Banner() {
   
 
   return (
-    <div className="banner">
+    <div style={{backgroundImage:`url(${movie ? imageUrl+movie.backdrop_path : ''})`}} className="banner">
       <div className="content">
         <h1 className="title">{movie ? movie.title : ''}</h1>
         <div className="banner_buttons">
