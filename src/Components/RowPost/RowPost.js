@@ -1,7 +1,15 @@
-import React from 'react'
-import './RowPost.css'
+import React, {useEffect, useState} from 'react';
+import axios from '../../axios';
+import {API_KEY, imageUrl} from '../Constants/Constants';
+import './RowPost.css';
 
 function RowPost() {
+  useEffect(() => {
+    axios.get(`discover/movie?api_key=${API_KEY}&with_genres=28`).then((response) => {
+      console.log(response);
+    })
+  }, [])
+
   return (
     <div className="row" >
       <h2>New This Week</h2>
