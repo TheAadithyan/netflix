@@ -9,7 +9,8 @@ function App() {
       <header className="App-header">
         <NavBar />
         <Banner />
-        <RowPost />
+        <RowPost title="Netflix Originals"/>
+        <RowPost title="Action" isSmall />
       </header>
     </div>
   );
