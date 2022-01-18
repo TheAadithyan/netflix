@@ -18,11 +18,17 @@
   border-radius: 9px;
   margin-right: 10px;
   max-height: 150px;
+  cursor: pointer;
 }
 
 .poster{
+  cursor: pointer;
   border-radius: 9px;
   max-height: 250px;
   margin-right: 10px;
 
+}
+
+.poster:hover{
+  transform: scale(1.1);
 }
